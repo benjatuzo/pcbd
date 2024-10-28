@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #0a0a0a, #1a1a1a); /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-button {
+    margin: 20px;
+}
+
+.button {
+    background: linear-gradient(to right, #4b0082, #8a2be2); /* Botón de gradiente */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #8a2be2, #4b0082); /* Color al pasar el mouse */
+    transform: scale(1.05);
+}
+
+.search-bar {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 2px solid #8a2be2;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #da70d6; /* Color al enfocar */
+}
+
+.search-bar button {
+    background: #8a2be2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.search-bar button:hover {
+    background: #da70d6;
+    transform: scale(1.05);
+}
+
+.category-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.category-box {
+    background-color: rgba(40, 40, 40, 0.9); /* Fondo de categorías */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    width: 30%;
+}
+
+.category-box h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.category-item {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.category-item img {
+    width: 30px; /* Ajusta según sea necesario */
+    margin-right: 10px;
+}
+
+.category-item:hover {
+    background-color: rgba(138, 43, 226, 0.5); /* Color al pasar el mouse */
+    transform: scale(1.05);
+}
+
+.product-display {
+    background-color: rgba(76, 175, 80, 0.9); /* Color verde */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    width: 65%;
+    margin-left: 20px;
+    position: relative;
+}
+
+.product-display h2 {
+    text-align: center;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo de producto */
+    transition: background-color 0.3s;
+}
+
+.product-item:hover {
+    background-color: rgba(0, 128, 0, 0.7); /* Color al pasar el mouse */
+}
+
+.product-item img {
+    width: 50px; /* Ajusta según sea necesario */
+    margin-right: 10px;
+}
+
+.product-item label {
+    margin-left: auto; /* Mueve el checkbox al final */
+}
+
+.add-to-cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ffffff; /* Color blanco */
+    color: #000; /* Texto negro */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #d3d3d3; /* Color al pasar el mouse */
+    transform: scale(1.05);
+}
+
+#priceCounter {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+}

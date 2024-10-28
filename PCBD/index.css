@@ -1,0 +1,199 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181818; /* Fondo oscuro para un ambiente gaming */
+    color: #f4f4f4; /* Color de texto claro */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1c1c; /* Fondo del header más oscuro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Sombra sutil para profundidad */
+}
+
+h1 {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 24px;
+    color: #007bff; /* Color azul para el título */
+}
+
+.session-buttons {
+    display: flex;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff; /* Color azul para los botones */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.3s; /* Transiciones suaves */
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #0056b3; /* Color más oscuro en hover */
+}
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cart-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.large-btn {
+    padding: 20px 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: transform 0.3s, background-color 0.3s; /* Transiciones suaves */
+}
+
+.large-btn:hover {
+    transform: scale(1.05);
+    background-color: #0056b3; /* Color más oscuro en hover */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Alinea elementos en extremos opuestos */
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #2a2a2a; /* Color de fondo del cuadro grande */
+    border-radius: 10px; /* Bordes redondeados para el cuadro */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 45%; /* Ancho del carrusel */
+    height: 400px; /* Altura del carrusel */
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+}
+
+.carousel {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 123, 255, 0.8); /* Fondo azul semi-transparente */
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10; /* Asegura que las flechas estén por encima del contenido */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 123, 255, 1); /* Color más intenso al pasar el mouse */
+}
+
+.carousel-button.left {
+    left: -30px; /* Ajusta el valor según sea necesario para desplazar la flecha a la izquierda */
+}
+
+.carousel-button.right {
+    right: -30px; /* Ajusta el valor según sea necesario para desplazar la flecha a la derecha */
+}
+
+/* Cuadro adicional en la parte inferior */
+.bottom-container {
+    display: flex;
+    justify-content: space-between; /* Alinea elementos en extremos opuestos */
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #2a2a2a; /* Color de fondo del cuadro */
+    border-radius: 10px; /* Bordes redondeados para el cuadro */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+}
+
+.product-list {
+    width: 45%; /* Ancho de la lista de productos */
+    display: flex;
+    flex-direction: column; /* Alinea productos verticalmente */
+    gap: 10px; /* Espacio entre productos */
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    background-color: #3e3e3e; /* Color de fondo de cada producto */
+    border-radius: 5px; /* Bordes redondeados para cada producto */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+    transition: transform 0.2s; /* Transición suave al pasar el mouse */
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Agranda el producto al pasar el mouse */
+}
+
+.product-image {
+    width: 50px; /* Ancho de la imagen del producto */
+    height: 50px; /* Altura de la imagen del producto */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.product-title {
+    font-size: 16px; /* Tamaño de texto del título del producto */
+}
+
+.admin-label {
+    color: red; /* Personaliza el color según lo desees */
+    font-weight: bold;
+    margin-right: 5px; /* Espacio entre la etiqueta admin y el nombre */
+}
